@@ -1,10 +1,10 @@
-interface RootObject {
+export interface RootObject {
   status: string;
   totalResults: number;
   articles: Article[];
 }
 
-interface Article {
+export interface Article {
   source: Source;
   author?: string;
   title: string;
@@ -15,7 +15,12 @@ interface Article {
   content?: string;
 }
 
-interface Source {
+export interface Source {
   id?: string;
   name: string;
+}
+export interface RespuestaNoticias{
+  status: string;
+  totalRresults: number;
+  articles: Article[];
 }
